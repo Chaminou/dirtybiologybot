@@ -1,7 +1,6 @@
 import pyautogui
 import time
 import sys
-from canard import a
 
 def get_position() :
     pos = pyautogui.position()
