@@ -24,7 +24,10 @@ def setup() :
     pyautogui.click()
     time.sleep(10)
     pyautogui.moveTo(neutral_coord)
-    pyautogui.scroll(-2)
+    time.sleep(1)
+    pyautogui.scroll(-1)
+    time.sleep(1)
+    pyautogui.scroll(-1)
     time.sleep(2)
         
 def get_pixel_color(x, y) :
