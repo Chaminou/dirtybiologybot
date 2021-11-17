@@ -1,6 +1,6 @@
 
 import time
-from pyclick import HumanClicker
+# from pyclick import HumanClicker
 import pyautogui
 import os
 import pyperclip
@@ -52,7 +52,6 @@ def get_pixel_color(x, y) :
 
     pyautogui.moveTo(color_coord)
     pyautogui.click()
-    time.sleep(0.1)
     pyautogui.hotkey('ctrl', 'q')
     pyautogui.keyDown('ctrl')
     pyautogui.press('c')
@@ -86,7 +85,6 @@ def set_pixel_color(x, y, color) :
 
     pyautogui.moveTo(color_coord)
     pyautogui.click()
-    time.sleep(0.1)
     for _ in range(7) :
         pyautogui.press('right')
     for _ in range(7) :
