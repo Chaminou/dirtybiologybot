@@ -122,9 +122,7 @@ def main() :
             for j in range(width) :
                 while time.time() - last_update < 118 :
                     pass
-                # print(get_pixel_color(offset_x + j, offset_y + i), rgba2hex(tardis.getpixel((j, i))), get_pixel_color(offset_x + j, offset_y + i) != rgba2hex(tardis.getpixel((j, i))))
                 if get_pixel_color(offset_x + j, offset_y + i) != rgba2hex(tardis.getpixel((j, i))):
-                    sys.exit()
                     ct = datetime.now()
                     print(j, i, offset_x + j, offset_y + i, rgba2hex(tardis.getpixel((j, i))), f"{ct.hour}:{ct.minute}:{ct.second}", end='\n\n')
                     set_pixel_color(offset_x + j, offset_y + i, rgba2hex(tardis.getpixel((j, i))))
