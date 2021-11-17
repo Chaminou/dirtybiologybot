@@ -1,9 +1,6 @@
-time
 pyclick
 pyautogui
-os
 pyperclip
 pillow
 datetime
-sys
 
