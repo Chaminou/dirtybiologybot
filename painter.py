@@ -1,9 +1,7 @@
 
-import random
 import time
 from pyclick import HumanClicker
 import pyautogui
-import pytesseract
 import os
 import pyperclip
 import PIL
@@ -131,7 +129,7 @@ def main() :
                     setup()
 
 if __name__ == '__main__' :
-    # setup()
+    setup()
     main()
             
     
